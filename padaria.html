@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-  <title>Registro de Produção de Pães</title>
+    <title>Registro de Produção de Pães</title>
 </head>
 <body>
   <h1>Registro de Produção de Pães</h1>
@@ -43,111 +44,107 @@
   <label for="pao_artesanal_batata_kg">Pão Artesanal Batata (Kg):</label>
   <input type="number" id="pao_artesanal_batata_kg" placeholder="0">
 
-  <label for="pao_artesanal_coco_kg">Pão Artesanal Coco (Kg):</label>
-  <input type="number" id="pao_artesanal_coco_kg" placeholder="0">
-
-  <label for="pao_artesanal_linhaca_kg">Pão Artesanal Linhaça (Kg):</label>
-  <input type="number" id="pao_artesanal_linhaca_kg" placeholder="0">
-
-  <label for="pao_artesanal_passas_kg">Pão Artesanal Passas (Kg):</label>
-  <input type="number" id="pao_artesanal_passas_kg" placeholder="0">
-
-  <label for="pao_artesanal_linhaca_kg">Pão Artesanal Linhaça (Kg):</label>
-  <input type="number" id="pao_artesanal_linhaca_kg" placeholder="0">
-
-  <label for="pao_rustico_limiar_t_seco_azeitona_kg">Pão Rústico Limiar T. Seco Azeitona (Kg):</label>
-  <input type="number" id="pao_rustico_limiar_t_seco_azeitona_kg" placeholder="0">
-
-  <label for="pao_rustico_limiar_gotas_choc_kg">Pão Rústico Limiar Gotas Chocolate (Kg):</label>
-  <input type="number" id="pao_rustico_limiar_gotas_choc_kg" placeholder="0">
-
-  <label for="pao_rustico_limiar_linhaca_kg">Pão Rústico Limiar Linhaça (Kg):</label>
-  <input type="number" id="pao_rustico_limiar_linhaca_kg" placeholder="0">
-
-  <label for="pao_rustico_limiar_australiano_kg">Pão Rústico Limiar Australiano (Kg):</label>
-  <input type="number" id="pao_rustico_limiar_australiano_kg" placeholder="0">
-
-  <h2>Massa Doce</h2>
-  <label for="pao_hamburguer_limiar_batata_kg">Pão Hambúrguer Limiar Batata (Kg):</label>
-  <input type="number" id="pao_hamburguer_limiar_batata_kg" placeholder="0">
-
-  <label for="pao_hamburguer_limiar_milho_kg">Pão Hambúrguer Limiar Milho (Kg):</label>
-  <input type="number" id="pao_hamburguer_limiar_milho_kg" placeholder="0">
-
-  <label for="pao_hamburguer_limiar_tradicional_kg">Pão Hambúrguer Limiar Tradicional (Kg):</label>
-  <input type="number" id="pao_hamburguer_limiar_tradicional_kg" placeholder="0">
-
-  <label for="pao_hot_dog_limiar_tradicional_kg">Pão Hot Dog Limiar Tradicional (Kg):</label>
-  <input type="number" id="pao_hot_dog_limiar_tradicional_kg" placeholder="0">
-
-  <label for="pao_recheado_goiaba_kg">Pão Recheado Goiaba (Kg):</label>
-  <input type="number" id="pao_recheado_goiaba_kg" placeholder="0">
-
-  <label for="pao_recheado_limiar_doce_lte_kg">Pão Recheado Limiar Doce LTE (Kg):</label>
-  <input type="number" id="pao_recheado_limiar_doce_lte_kg" placeholder="0">
+  <label for="pao_artesanal_integral_kg">Pão Artesanal Integral (Kg):</label>
+  <input type="number" id="pao_artesanal_integral_kg" placeholder="0">
 
   <button onclick="registrarProducao()">Registrar Produção</button>
 
-  <table id="tabelaProducao" style="display: none;">
-    <thead>
+  <div id="tabelaProducao" style="display: none;">
+    <h2>Produção Registrada</h2>
+    <table>
       <tr>
-        <th>Tipo de Pão</th>
-        <th>Quantidade (Kg)</th>
+        <th>Pão</th>
+        <th>Limiar (Kg)</th>
       </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+      <tr>
+        <td>Pão Francês</td>
+        <td id="pao_frances_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Francês Integral</td>
+        <td id="pao_frances_integral_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Baguete Italiana Limiar Multigrãos</td>
+        <td id="pao_baguete_italiana_limiar_multigraos_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Baguete Italiana Limiar Tradicional</td>
+        <td id="pao_baguete_italiana_limiar_tradicional_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Baguete Italiana Limiar Integral</td>
+        <td id="pao_baguete_italiana_limiar_integral_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Baguete Limiar Integral</td>
+        <td id="pao_baguete_limiar_integral_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Baguete Limiar Parmesão</td>
+        <td id="pao_baguete_limiar_parmesao_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Baguete Limiar Tradicional</td>
+        <td id="pao_baguete_limiar_tradicional_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Artesanal Milho</td>
+        <td id="pao_artesanal_milho_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Artesanal Aveia</td>
+        <td id="pao_artesanal_aveia_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Artesanal Batata</td>
+        <td id="pao_artesanal_batata_producao"></td>
+      </tr>
+      <tr>
+        <td>Pão Artesanal Integral</td>
+        <td id="pao_artesanal_integral_producao"></td>
+      </tr>
+    </table>
+  </div>
 
   <script>
     function registrarProducao() {
-      const producao = {
-        "Pão Francês Limiar (Kg)": document.getElementById("pao_frances_limiar_kg").value || 0,
-        "Pão Francês Limiar Integral (Kg)": document.getElementById("pao_frances_limiar_integral_kg").value || 0,
-        "Pão Baguete Italiana Limiar Multigrãos (Kg)": document.getElementById("pao_baguete_italiana_limiar_multigraos_kg").value || 0,
-        "Pão Baguete Italiana Limiar Tradicional (Kg)": document.getElementById("pao_baguete_italiana_limiar_tradicional_kg").value || 0,
-        "Pão Baguete Italiana Limiar Integral (Kg)": document.getElementById("pao_baguete_italiana_limiar_integral_kg").value || 0,
-        "Pão Baguete Limiar Integral (Kg)": document.getElementById("pao_baguete_limiar_integral_kg").value || 0,
-        "Pão Baguete Limiar Parmesão (Kg)": document.getElementById("pao_baguete_limiar_parmesao_kg").value || 0,
-        "Pão Baguete Limiar Tradicional (Kg)": document.getElementById("pao_baguete_limiar_tradicional_kg").value || 0,
-        "Pão Artesanal Milho (Kg)": document.getElementById("pao_artesanal_milho_kg").value || 0,
-        "Pão Artesanal Aveia (Kg)": document.getElementById("pao_artesanal_aveia_kg").value || 0,
-        "Pão Artesanal Batata (Kg)": document.getElementById("pao_artesanal_batata_kg").value || 0,
-        "Pão Artesanal Coco (Kg)": document.getElementById("pao_artesanal_coco_kg").value || 0,
-        "Pão Artesanal Linhaça (Kg)": document.getElementById("pao_artesanal_linhaca_kg").value || 0,
-        "Pão Artesanal Passas (Kg)": document.getElementById("pao_artesanal_passas_kg").value || 0,
-        "Pão Artesanal Linhaça (Kg)": document.getElementById("pao_artesanal_linhaca_kg").value || 0,
-        "Pão Rústico Limiar T. Seco Azeitona (Kg)": document.getElementById("pao_rustico_limiar_t_seco_azeitona_kg").value || 0,
-        "Pão Rústico Limiar Gotas Chocolate (Kg)": document.getElementById("pao_rustico_limiar_gotas_choc_kg").value || 0,
-        "Pão Rústico Limiar Linhaça (Kg)": document.getElementById("pao_rustico_limiar_linhaca_kg").value || 0,
-        "Pão Rústico Limiar Australiano (Kg)": document.getElementById("pao_rustico_limiar_australiano_kg").value || 0,
-        "Pão Hambúrguer Limiar Batata (Kg)": document.getElementById("pao_hamburguer_limiar_batata_kg").value || 0,
-        "Pão Hambúrguer Limiar Milho (Kg)": document.getElementById("pao_hamburguer_limiar_milho_kg").value || 0,
-        "Pão Hambúrguer Limiar Tradicional (Kg)": document.getElementById("pao_hamburguer_limiar_tradicional_kg").value || 0,
-        "Pão Hot Dog Limiar Tradicional (Kg)": document.getElementById("pao_hot_dog_limiar_tradicional_kg").value || 0,
-        "Pão Recheado Goiaba (Kg)": document.getElementById("pao_recheado_goiaba_kg").value || 0,
-        "Pão Recheado Limiar Doce LTE (Kg)": document.getElementById("pao_recheado_limiar_doce_lte_kg").value || 0
-      };
+      // Obter os valores dos campos de entrada
+      var pao_frances_limiar_kg = parseFloat(document.getElementById('pao_frances_limiar_kg').value);
+      var pao_frances_limiar_integral_kg = parseFloat(document.getElementById('pao_frances_limiar_integral_kg').value);
+      var pao_baguete_italiana_limiar_multigraos_kg = parseFloat(document.getElementById('pao_baguete_italiana_limiar_multigraos_kg').value);
+      var pao_baguete_italiana_limiar_tradicional_kg = parseFloat(document.getElementById('pao_baguete_italiana_limiar_tradicional_kg').value);
+      var pao_baguete_italiana_limiar_integral_kg = parseFloat(document.getElementById('pao_baguete_italiana_limiar_integral_kg').value);
+      var pao_baguete_limiar_integral_kg = parseFloat(document.getElementById('pao_baguete_limiar_integral_kg').value);
+      var pao_baguete_limiar_parmesao_kg = parseFloat(document.getElementById('pao_baguete_limiar_parmesao_kg').value);
+      var pao_baguete_limiar_tradicional_kg = parseFloat(document.getElementById('pao_baguete_limiar_tradicional_kg').value);
+      var pao_artesanal_milho_kg = parseFloat(document.getElementById('pao_artesanal_milho_kg').value);
+      var pao_artesanal_aveia_kg = parseFloat(document.getElementById('pao_artesanal_aveia_kg').value);
+      var pao_artesanal_batata_kg = parseFloat(document.getElementById('pao_artesanal_batata_kg').value);
+      var pao_artesanal_integral_kg = parseFloat(document.getElementById('pao_artesanal_integral_kg').value);
 
-      const tabelaProducao = document.getElementById("tabelaProducao");
-      const tbody = tabelaProducao.getElementsByTagName("tbody")[0];
+      // Calcular a produção total para cada tipo de pão
+      var pao_frances_producao = pao_frances_limiar_kg + pao_frances_limiar_integral_kg;
+      var pao_baguete_italiana_producao = pao_baguete_italiana_limiar_multigraos_kg + pao_baguete_italiana_limiar_tradicional_kg + pao_baguete_italiana_limiar_integral_kg;
+      var pao_baguete_producao = pao_baguete_limiar_integral_kg + pao_baguete_limiar_parmesao_kg + pao_baguete_limiar_tradicional_kg;
+      var pao_artesanal_producao = pao_artesanal_milho_kg + pao_artesanal_aveia_kg + pao_artesanal_batata_kg + pao_artesanal_integral_kg;
 
-      tbody.innerHTML = "";
+      // Exibir a tabela de produção
+      document.getElementById('tabelaProducao').style.display = 'block';
 
-      for (const tipoPao in producao) {
-        const quantidadeKg = producao[tipoPao];
-
-        if (quantidadeKg > 0) {
-          const row = tbody.insertRow();
-          const tipoCell = row.insertCell();
-          const quantidadeCell = row.insertCell();
-
-          tipoCell.textContent = tipoPao;
-          quantidadeCell.textContent = quantidadeKg;
-        }
-      }
-
-      tabelaProducao.style.display = "block";
+      // Atualizar os valores na tabela
+      document.getElementById('pao_frances_producao').textContent = pao_frances_producao.toFixed(2);
+      document.getElementById('pao_frances_integral_producao').textContent = pao_frances_limiar_integral_kg.toFixed(2);
+      document.getElementById('pao_baguete_italiana_limiar_multigraos_producao').textContent = pao_baguete_italiana_limiar_multigraos_kg.toFixed(2);
+      document.getElementById('pao_baguete_italiana_limiar_tradicional_producao').textContent = pao_baguete_italiana_limiar_tradicional_kg.toFixed(2);
+      document.getElementById('pao_baguete_italiana_limiar_integral_producao').textContent = pao_baguete_italiana_limiar_integral_kg.toFixed(2);
+      document.getElementById('pao_baguete_limiar_integral_producao').textContent = pao_baguete_limiar_integral_kg.toFixed(2);
+      document.getElementById('pao_baguete_limiar_parmesao_producao').textContent = pao_baguete_limiar_parmesao_kg.toFixed(2);
+      document.getElementById('pao_baguete_limiar_tradicional_producao').textContent = pao_baguete_limiar_tradicional_kg.toFixed(2);
+      document.getElementById('pao_artesanal_milho_producao').textContent = pao_artesanal_milho_kg.toFixed(2);
+      document.getElementById('pao_artesanal_aveia_producao').textContent = pao_artesanal_aveia_kg.toFixed(2);
+      document.getElementById('pao_artesanal_batata_producao').textContent = pao_artesanal_batata_kg.toFixed(2);
+      document.getElementById('pao_artesanal_integral_producao').textContent = pao_artesanal_integral_kg.toFixed(2);
     }
   </script>
 </body>
