@@ -4,7 +4,11 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "158973";
+<<<<<<< HEAD
 $dbname = "sitemacontagens";
+=======
+$dbname = "sistemacontagens";
+>>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -36,4 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30

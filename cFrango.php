@@ -17,11 +17,18 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="img1.ico">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta charset="UTF-8">
 <head>
     <title>Prevenção - Frango</title>
+=======
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta charset="UTF-8">
+<head>
+    <title>Sistema de Contagem de Frango</title>
+>>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
   
