@@ -16,12 +16,8 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="img1.ico">
     <title>Prevenção - Home</title>
-=======
-    <title>Prevenção - Menu</title>
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <style>
@@ -29,7 +25,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            
+
         }
         h1 {
             margin: 0;
@@ -118,10 +114,10 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         <a href="alterar_senha.php">Alterar Senha</a>
        <a href="logout.php">Sair</a>
     </div>
-    
+
 
     <div class="panel">
-       
+
         <p>Data: <span id="date"></span></p>
         <p>Hora: <span id="time"></span></p>
     </div>

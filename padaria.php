@@ -17,12 +17,8 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <head> 
     <link rel="icon" type="image/x-icon" href="img1.ico">
-=======
-<head>
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -31,7 +27,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 
 body {
   font-family: Arial, sans-serif;
-  
+
 }
 
 .header {
@@ -114,11 +110,7 @@ th {
 
 
     </style>
-<<<<<<< HEAD
   <title>Prevenção - Padaria</title>
-=======
-  <title>Registro de Produção de Pães</title>
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
 </head>
 <body>
 

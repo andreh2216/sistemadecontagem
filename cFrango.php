@@ -17,25 +17,18 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="img1.ico">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta charset="UTF-8">
 <head>
     <title>Prevenção - Frango</title>
-=======
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <meta charset="UTF-8">
-<head>
-    <title>Sistema de Contagem de Frango</title>
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-  
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            
+
         }
 
         h1 {
@@ -104,7 +97,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             bottom: 0;
             width: 100%;
         }
-       
+
  .header {
     background-color: #2196F3;
             color: #fff;
@@ -155,7 +148,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         <table>
             <thead>
                 <tr>
-                   
+
                     <th>Quantidade</th>
                     <th>Peso</th>
                     <th>Validade</th>
@@ -163,19 +156,19 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             </thead>
             <tbody>
                 <tr>
-                   
+
                     <td><input type="number" id="caixas-acougue-1" min="0"></td>
                     <td><input type="text" id="peso-acougue-1"></td>
                     <td><input type="date" id="validade-acougue-1"></td>
                 </tr>
                 <tr>
-                   
+
                     <td><input type="number" id="caixas-acougue-2" min="0"></td>
                     <td><input type="text" id="peso-acougue-2"></td>
                     <td><input type="date" id="validade-acougue-2"></td>
                 </tr>
                 <tr>
-                   
+
                     <td><input type="number" id="caixas-acougue-3" min="0"></td>
                     <td><input type="text" id="peso-acougue-3"></td>
                     <td><input type="date" id="validade-acougue-3"></td>
@@ -226,13 +219,13 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             <thead>
                 <tr>
                     <th>Quantidade (Kg)</th>
-         
+
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><input type="number" id="quantidade-venda-quilos" min="0"></td>
-               
+
                 </tr>
             </tbody>
         </table>

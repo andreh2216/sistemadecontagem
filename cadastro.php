@@ -4,10 +4,7 @@
     <title>Cadastro - Prevenção</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="img1.ico">
-=======
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style>
         body {
@@ -67,7 +64,6 @@
             font-size: 14px;
             margin-top: 10px;
         }
-
         .footer {
             background-color: #333;
             color: #fff;
@@ -81,7 +77,6 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Cadastro</h1>
         <form class="registration-form">

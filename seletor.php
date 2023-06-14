@@ -13,12 +13,8 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="img1.ico">
     <title>Prevenção - Seletor</title>
-=======
-    <title>Prevenção - Home</title>
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <style>
@@ -108,7 +104,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         <h2>Olá, <?php echo $_SESSION['nome']; ?></h2>
         <a href="historico.php">Histórico</a>
         <a href="alterar_senha.php">Alterar Senha</a>
-      
+
         <a href="logout.php">Sair</a>
     </div>
 

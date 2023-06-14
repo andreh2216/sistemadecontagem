@@ -5,12 +5,8 @@ require_once "autenticacao.php"
 
 <html>
 <head>
-<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="img1.ico">
     <title>Prevenção - PGF</title>
-=======
-    <title>Prevenção - Home</title>
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -110,11 +106,8 @@ require_once "autenticacao.php"
 </head>
 <body>
     <div class="container-login">
-<<<<<<< HEAD
         <img src="img2.png" alt="Logo da empresa" style="height: 210px;">
 
-=======
->>>>>>> ec28fbd7b3ecc279f7a04367cefadbb55be48a30
         <h2 class="user-info" id="user-info"></h2>
         <div class="login-box">
             <h1 style="font-family: 'Roboto Condensed', sans-serif;">Acesso</h1>
