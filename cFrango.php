@@ -116,10 +116,12 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <body>
 
 <div class="header">
-        <h1>Prevenção</h1>
+<h1><a href="seletor.php">Prevenção</a></h1>
         <h2>Olá, <?php echo $_SESSION['nome']; ?></h2>
+        <a href="aplicacao.php">Aplicação</a>
+        <a href="relatorio.php">Relatório</a>
         <a href="historico.php">Histórico</a>
-        <a href="alterar_senha.php">Alterar Senha</a>
+        <a href="aSenha.php">Alterar Senha</a>
        <a href="logout.php">Sair</a>
     </div>
 

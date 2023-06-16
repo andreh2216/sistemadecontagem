@@ -99,13 +99,14 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Prevenção</h1>
+<div class="header">
+<h1><a href="seletor.php">Prevenção</a></h1>
         <h2>Olá, <?php echo $_SESSION['nome']; ?></h2>
+        <a href="aplicacao.php">Aplicação</a>
+        <a href="relatorio.php">Relatório</a>
         <a href="historico.php">Histórico</a>
-        <a href="alterar_senha.php">Alterar Senha</a>
-
-        <a href="logout.php">Sair</a>
+        <a href="aSenha.php">Alterar Senha</a>
+       <a href="logout.php">Sair</a>
     </div>
 
     <div class="panel">
@@ -114,8 +115,8 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     </div>
 
     <div class="seletor">
-        <button id="aplicacao-button" onclick="openPage('index.php')">Aplicação</button>
-        <button id="relatorios-button" onclick="openPage('relatorios.html')">Relatórios</button>
+        <button id="aplicacao-button" onclick="openPage('aplicacao.php')">Aplicação</button>
+        <button id="relatorios-button" onclick="openPage('relatorio.php')">Relatórios</button>
     </div>
 
     <div class="footer">

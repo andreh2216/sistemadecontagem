@@ -6,7 +6,7 @@ require_once "autenticacao.php"
 <html>
 <head>
     <link rel="icon" type="image/x-icon" href="img1.ico">
-    <title>Prevenção - PGF</title>
+    <title>Prevenção - Hiperideal Patamares</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">

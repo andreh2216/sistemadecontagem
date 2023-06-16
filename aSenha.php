@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Recuperar Senha - Prevenção</title>
+    <title>Alterar Senha - Prevenção</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="img1.ico">
@@ -76,11 +76,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Recuperar Senha</h1>
+        <h1>Alterar Senha</h1>
         <form class="recovery-form">
             <input type="email" name="email" placeholder="E-mail"><br>
             <button type="submit">Enviar E-mail de Recuperação</button>
-            <p>Lembrou a senha? <a href="aplicacao.php">Faça login</a>.</p>
+            <p>Desistiu de alterar a senha ? <a href="seletor.php">Voltar a home</a>.</p>
+            
         </form>
     </div>
     <div class="footer">

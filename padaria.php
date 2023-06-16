@@ -53,6 +53,7 @@ body {
             left: 0;
             bottom: 0;
             width: 100%;
+            z-index: 2;
         }
 
 h1 {
@@ -84,6 +85,7 @@ button {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  z-index: 1
 }
 
 table {
@@ -116,10 +118,12 @@ th {
 
 
 <div class="header">
-        <h1>Prevenção</h1>
-        <h2>Olá, <?php echo $_SESSION['nome']; ?></h2>
+<h1><a href="seletor.php">Prevenção</a></h1>
+        <h2 style="color:white">Olá, <?php echo $_SESSION['nome']; ?></h2>
+        <a href="aplicacao.php">Aplicação</a>
+        <a href="relatorio.php">Relatório</a>
         <a href="historico.php">Histórico</a>
-        <a href="alterar_senha.php">Alterar Senha</a>
+        <a href="aSenha.php">Alterar Senha</a>
        <a href="logout.php">Sair</a>
     </div>
 
