@@ -18,46 +18,21 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <!DOCTYPE html>
 <html>
 <head> 
-    <link rel="icon" type="image/x-icon" href="img1.ico">
-
+    <link rel="icon" type="image/x-icon" href="/imagens/img1.ico">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
     <style>
 
-body {
-  font-family: Arial, sans-serif;
-
-}
-
-.header {
-            background-color: #4CAF50;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .header a {
-            color: #fff;
-            margin-right: 10px;
-            text-decoration: none;
-        }
-.footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
 
 
 
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            z-index: 2;
-        }
-
+#nome {position:relative}
 h1 {
   text-align: center;
+  margin:0;
+  
 }
 
 h2 {
@@ -74,24 +49,29 @@ input[type="number"] {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  
+
+  
 }
 
 button {
-  display: block;
+          
+  display: center;
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  padding: 10px 17px;
+  background-color: #0000FF;
   color: white;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  z-index: 1
+  font-size:20px
 }
 
 table {
   margin-top: 20px;
   border-collapse: collapse;
   width: 100%;
+
 }
 
 th, td {
@@ -110,24 +90,41 @@ th {
   }
 }
 
+.buttons-header {display:flex;
+            
+            size:2px;
+     
+            position:sticky;
+            bottom:0;
+            
+       
+       
+       }
+
+
+.ico {padding:24px; margin:1px;height:25px;     }  
 
     </style>
   <title>Prevenção - Padaria</title>
 </head>
 <body>
-
-
 <div class="header">
-<h1><a href="seletor.php">Prevenção</a></h1>
-        <h2 style="color:white">Olá, <?php echo $_SESSION['nome']; ?></h2>
-        <a href="aplicacao.php">Aplicação</a>
-        <a href="relatorio.php">Relatório</a>
-        <a href="historico.php">Histórico</a>
-        <a href="aSenha.php">Alterar Senha</a>
-       <a href="logout.php">Sair</a>
-    </div>
 
-  <h1>Registro de Produção de Pães</h1>
+
+            
+<img id="logo" style="display:none;" src="imagens/img2.png" alt="logo">
+<h1 id="nome"><a  href="/aplicacao/padaria.php">Padaria</a></h1>
+
+
+
+
+
+
+</div>
+
+
+
+  <h1>Registro de Produção</h1>
 
   <h2>Pão Francês</h2>
   <label for="pao_frances_limiar_kg">Pão Francês Limiar (Placas):</label>
@@ -221,6 +218,20 @@ th {
     </tbody>
   </table>
 
+  
+<div class="buttons-header">
+
+
+<a href="/seletor.php"><img class="ico" src="/imagens/casa-em-branco.png" alt="home" ></a>
+<a href="/aplicacao.php"> <img  class="ico"src="/imagens/verificacao-de-lista.png" alt="home" ></a>
+<a href="/relatorio.php"> <img class="ico"src="/imagens/alinhamento-do-grafico.png" alt="home"></a>
+<a href="/historico.php"> <img class="ico"src="/imagens/tempo-passado.png" alt="home"></a>
+<a href="/logout.php"> <img class="ico"src="/imagens/definicoes.png" alt="home"></a>
+
+
+    </div>
+
+
   <script>
     function registrarProducao() {
       const producao = {
@@ -272,9 +283,7 @@ th {
       tabelaProducao.style.display = "block";
     }
   </script>
-   <div class="footer">
-    &copy; 2023 Prevenção. Todos os direitos reservados.
-</div>
+ 
 
 </body>
 </html>

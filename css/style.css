@@ -1,0 +1,30 @@
+body {
+
+
+   
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0px;
+        padding:0px;    
+}
+
+.header img {
+    size: 100px;
+}
+.header {
+
+    
+        background: linear-gradient(to bottom, #FF0000, #0000FF);
+        color: #fff;
+        padding: 0%;
+        text-align: center;
+        
+
+}
+.header a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+

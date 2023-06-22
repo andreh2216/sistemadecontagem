@@ -5,7 +5,7 @@ require_once "autenticacao.php"
 
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="img1.ico">
+    <link rel="icon" type="image/x-icon" href="imagens/img1.ico">
     <title>Prevenção - Hiperideal Patamares</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -52,7 +52,7 @@ require_once "autenticacao.php"
         .login-box button {
             width: 100%;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #0000FF;
             color: #fff;
             border: none;
             cursor: pointer;
@@ -106,7 +106,7 @@ require_once "autenticacao.php"
 </head>
 <body>
     <div class="container-login">
-        <img src="img2.png" alt="Logo da empresa" style="height: 210px;">
+        <img src="imagens/img2.png" alt="Logo da empresa" style="height: 210px;">
 
         <h2 class="user-info" id="user-info"></h2>
         <div class="login-box">
@@ -118,17 +118,7 @@ require_once "autenticacao.php"
                 <button type="submit">Entrar</button>
             </form>
 
-            <a href="rSenha.php">Recuperar Senha</a>
-            <a href="cadastro.php">Registrar Conta</a>
-            <?php if (isset($errorMessage)): ?>
-                <p class="error-message"><?= $errorMessage ?></p>
-            <?php endif; ?>
-            <p class="privacy-policy">Ao fazer login, você concorda com nossa <a href="politica_privacidade.html">política de privacidade</a>.</p>
-        </div>
-        <a href="logout.php">Logout</a>
-    </div>
-    <div class="footer2">
-        &copy; 2023 Prevenção. Todos os direitos reservados.
-    </div>
+            
+ 
 </body>
 </html>

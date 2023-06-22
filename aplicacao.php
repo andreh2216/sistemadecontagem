@@ -16,33 +16,18 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="img1.ico">
-    <title>Prevenção - Home</title>
+    <link rel="icon" type="image/x-icon" href="imagens/img1.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Prevenção - Aplicacao</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-
-        }
+     
         h1 {
             margin: 0;
         }
 
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .header a {
-            color: #fff;
-            margin-right: 10px;
-            text-decoration: none;
-        }
+     
 
         .seletor {
             display: flex;
@@ -94,40 +79,61 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             margin-bottom: 10px;
         }
 
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
+        .buttons-header {display:flex;
+            
+            size:2px;
+     
+            position:fixed;
+            bottom:0;
+       
+       
+       }
+
+
+.ico {padding:24px; margin:1px;height:25px;     }  
+
+
+        
     </style>
 </head>
 <body>
-    
+
 <div class="header">
-<h1><a href="seletor.php">Prevenção</a></h1>
-        <h2>Olá, <?php echo $_SESSION['nome']; ?></h2>
-        <a href="aplicacao.php">Aplicação</a>
-        <a href="relatorio.php">Relatório</a>
-        <a href="historico.php">Histórico</a>
-        <a href="aSenha.php">Alterar Senha</a>
-       <a href="logout.php">Sair</a>
+
+
+            
+            <img id="logo" style="display:none;" src="imagens/img2.png" alt="logo">
+            <h1><a  href="/seletor.php">Aplicação</a></h1>
+      
+           
+  
+
+
+
+        </div>
+
+    
+<div class="buttons-header">
+
+
+<a href="seletor.php"><img class="ico" src="/imagens/casa-em-branco.png" alt="home" ></a>
+<a href="aplicacao.php"> <img  class="ico"src="/imagens/verificacao-de-lista.png" alt="home" ></a>
+<a href="relatorio.php"> <img class="ico"src="/imagens/alinhamento-do-grafico.png" alt="home"></a>
+<a href="historico.php"> <img class="ico"src="/imagens/tempo-passado.png" alt="home"></a>
+<a href="logout.php"> <img class="ico"src="/imagens/definicoes.png" alt="home"></a>
+
+
     </div>
-
-    <div class="panel">
-
+        <div class="panel">
         <p>Data: <span id="date"></span></p>
         <p>Hora: <span id="time"></span></p>
+        <p>Olá, <?php echo $_SESSION['nome']; ?></p>
     </div>
 
     <div class="seletor">
-        <button id="padaria-button" onclick="openPage('padaria.php')">Padaria</button>
-        <button id="galeteria-button" onclick="openPage('galeteria.php')">Galeteria</button>
-        <button id="frango-button" onclick="openPage('cFrango.php')">Frango</button>
+        <button id="padaria-button" onclick="openPage('aplicacao/padaria.php')">Padaria</button>
+        <button id="galeteria-button" onclick="openPage('aplicacao/galeteria.php')">Galeteria</button>
+        <button id="frango-button" onclick="openPage('aplicacao/cFrango.php')">Frango</button>
     </div>
 
     <script>
@@ -146,9 +152,6 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         setInterval(updateTime, 1000); // Atualizar a cada segundo
     </script>
 
-    <div class="footer">
-        &copy; 2023 Prevenção. Todos os direitos reservados.
-    </div>
 
 </body>
 </html>

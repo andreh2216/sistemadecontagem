@@ -10,26 +10,25 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     exit();
 }
 
+
 // Restante do código da página aqui...
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="img1.ico">
+    <link rel="icon" type="image/x-icon" href="/imagens/img1.ico">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Prevenção - Galeteria</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-
-        }
+    
 
         h1 {
             text-align: center;
+            margin:0;
         }
 
         form {
@@ -43,6 +42,8 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             font-weight: bold;
         }
 
+  
+
         input[type="text"],
         input[type="number"] {
             margin-bottom: 10px;
@@ -52,9 +53,19 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         }
 
         input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
+          
+  display: center;
+  margin-top: 20px;
+  padding: 10px 17px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size:20px
+
+
+
         }
 
         table {
@@ -75,44 +86,43 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             background-color: #f2f2f2;
         }
 
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
 
- .header {
-    background-color: #FF9800;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+        .buttons-header {display:flex;
+            
+            size:2px;
+     
+            position:fixed;
+            bottom:0;
+       
+       
+       }
 
-        .header a {
-            color: #fff;
-            margin-right: 10px;
-            text-decoration: none;
-        }
+
+.ico {padding:24px; margin:1px;height:25px;     }  
+
+       
+
+
     </style>
 </head>
 <body>
-
 <div class="header">
-<h1><a href="seletor.php">Prevenção</a></h1>
-        <h2>Olá, <?php echo $_SESSION['nome']; ?></h2>
-        <a href="aplicacao.php">Aplicação</a>
-        <a href="relatorio.php">Relatório</a>
-        <a href="historico.php">Histórico</a>
-        <a href="aSenha.php">Alterar Senha</a>
-       <a href="logout.php">Sair</a>
-    </div>
 
-    <h1>Registro de Sobras - Galeteria</h1>
+
+            
+            <img id="logo" style="display:none;" src="imagens/img2.png" alt="logo">
+            <h1><a  href="/aplicacao/galeteria.php">Galeteria</a></h1>
+      
+           
+  
+
+
+
+        </div>
+
+
+
+    <h1>Registro de Sobras</h1>
     <form id="sobra-form">
         <label for="codigo">Código do Produto:</label>
         <select id="codigo" name="codigo">
@@ -150,7 +160,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         <label for="tara">Tara:</label>
         <input type="number" id="tara" name="tara" placeholder="Digite a tara em kg" step="0.01" required>
 
-        <input type="submit" value="Registrar Sobras">
+        <input  type="submit" value="Registrar Sobras">
     </form>
 
     <table id="sobra-table" style="display: none;">
@@ -164,6 +174,18 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         </thead>
         <tbody id="sobra-table-body"></tbody>
     </table>
+
+    <div class="buttons-header">
+
+
+<a href="/seletor.php"><img class="ico" src="/imagens/casa-em-branco.png" alt="home" ></a>
+<a href="/aplicacao.php"> <img  class="ico"src="/imagens/verificacao-de-lista.png" alt="home" ></a>
+<a href="/relatorio.php"> <img class="ico"src="/imagens/alinhamento-do-grafico.png" alt="home"></a>
+<a href="/historico.php"> <img class="ico"src="/imagens/tempo-passado.png" alt="home"></a>
+<a href="/logout.php"> <img class="ico"src="/imagens/definicoes.png" alt="home"></a>
+
+
+    </div>
 
     <script>
         document.getElementById('sobra-form').addEventListener('submit', function(e) {
@@ -225,8 +247,6 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             document.getElementById('tara').value = '';
         });
     </script>
-       <div class="footer">
-        &copy; 2023 Prevenção. Todos os direitos reservados.
-    </div>
+  
 </body>
 </html>
